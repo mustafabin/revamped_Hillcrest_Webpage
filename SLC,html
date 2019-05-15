@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<style>
+.collapsible {
+  background-color: #AE33FF;
+  color: white;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    filter: grayscale(0%);
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+
+
+
+
+
+<title>SLC</title>
+</head>
+<body>
+<!--
+Banner goes here |
+                |
+                v 
+-->
+<br>
+
+
+
+<img class="collapsible" src="https://i.imgur.com/M1YSat1.jpg">
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+</div>
+
+
+
+
+
+<script>
+//this script tag must be below the head tage b/c it needs the page to load before it can get elements by class name 
+var coll = document.getElementsByClassName("collapsible");
+//gathers all the divs with the class name collapsible into an array (page must load before that happens ^^)
+var i;
+// the for loop below goes thru every div in the above mentioned array
+for (i = 0; i < coll.length; i++) {
+ coll[i].addEventListener("click", function() {
+ 	//The classList property returns the class name(s) of an element, as a DOMTokenList object.
+ 	// to futher investigate this un-comment the line below
+ 	console.log(this.classList);
+ 	//https://www.w3schools.com/jsref/prop_element_classlist.asp
+   this.classList.toggle("active");
+   var content = this.nextElementSibling;
+   //nextElementSibling is the div paragraph 
+   console.log(content);
+   if (content.style.display === "block") {
+     content.style.display = "none";
+   } else {
+     content.style.display = "block";
+   }
+ });
+}
+
+</script>
+</body>
+</html>
+
