@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    
+<link rel="icon" type="image/png" href="https://cdn.glitch.com/73442f06-3b79-4cfe-9dc7-3cdb78168734%2Fhillcrest_logo.png?1555330860096">
+<a class="navbar-brand" href="index.html"><img src="https://cdn.glitch.com/73442f06-3b79-4cfe-9dc7-3cdb78168734%2Ffav.ico?1554812880512" width="50px" /></a>
+<link href="slc_css.css" rel="stylesheet" type="text/css">    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css"> 
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">    
+<!-- -->
+<style>
+.collapsible {
+  background-color: #AE33FF;
+  color: white;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+.active, .collapsible:hover {
+    filter: grayscale(0%);
+}
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+</style>
+
+
+
+
+
+<title>SLC</title>
+</head>
+<body>
+<!--
+Banner goes here |
+                |
+                v 
+ -->
+<title>SLCs  Hillcrest High School</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- favicon -->
+<link rel="icon" type="image/png" href="https://cdn.glitch.com/73442f06-3b79-4cfe-9dc7-3cdb78168734%2Fhillcrest_logo.png?1555330860096">
+<!-- end of favicon -->
+
+<!-- Boostrap and font awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css"> 
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"><link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src='buttons.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- end of Bootstrap and font awesome -->
+
+<!-- link CSS and JQuery -->
+<link rel="stylesheet" href="index.css"> 
+<script src="js/index.json"></script>
+<!-- end of CSS and JQuery -->
+</head>
+
+
+
+<body id="main" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+       <a class="navbar-brand" href="index.html"><img src="https://cdn.glitch.com/73442f06-3b79-4cfe-9dc7-3cdb78168734%2Ffav.ico?1554812880512" width="50px" /></a>
+    </div>
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+       <div class="dropdown">
+      <button class="dropbtn" onclick="about()">About</button>
+      </div>
+     <div class="dropdown">
+  <button class="dropbtn"><a href="slc.html" style="color: white">SLCs</a></button>
+  <div class="dropdown-content">
+    <a href="slc.html#biztek">Biztek</a>
+    <a href="slc.html#pre-med">Pre-Med</a>
+    <a href="slc.html#public-service">Public Service</a>
+    <a href="slc.html#theatre#">Theatre</a>
+    <a href="slc.html#teachers#">Teachers of Tomorrow</a>
+    <a href="slc.html#media-arts">Media Arts</a>
+    <a href="slc.html#global-citizens">Global Citizens</a>
+  </div>
+</div>
+ <div class="dropdown">
+  <button class="dropbtn"><a href="sports.html" style="color: white">Sports</a></button>
+  <div class="dropdown-content">
+    <a href="sports.html#track">Track&Field</a>
+    <a href="sports.html#wrestling">Wrestling</a>
+    <a href="sports.html#gym">Gymnastics</a>
+    <a href="sports.html#basketball">Basketball</a>
+    <a href="sports.html#soccer">Soccer</a>
+    <a href="sports.html#bowling">Bowling</a>
+    <a href="sports.html#tennis">Tennis</a>
+    <a href="sports.html#cross-country">Cross Country</a>
+    <a href="sports.html#baseball">Baseball</a>
+    <a href="sports.html#cricket">Cricket</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a href="academics.html" style="color: white">Academics</a></button>
+  <div class="dropdown-content">
+    <a href="academics.html#cte">CTE</a>
+    <a href="academics.html#hillcrest-life">Life at Hillcrest</a>
+    <a href="academics.html#ap">AP for all</a>
+    <a href="academics.html#ap-c">AP Courses</a>
+    <a href="academics.html#extracurricular">ExtraCurriculars</a>
+    <a href="academics.html#clubs">Clubs</a>
+    <a href="academics.html#vei">VEI</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a href="departments.html" style="color: white">Departments </a></button>
+  <div class="dropdown-content">
+    <a href="departments.html#english">English</a>
+    <a href="departments.html#math">Mathematics</a>
+    <a href="departments.html#science">Science</a>
+    <a href="departments.html#foreign-language">Foreign Language/LOTE</a>
+    <a href="departments.html#social-studies">Social Studies</a>
+    <a href="departments.html#library">Library</a>
+  </div>
+</div>
+<div class="dropdown">
+      <button class="dropbtn" onclick="calendar()">Calendar</button>
+      </div>
+   <div class="dropdown">
+      <button class="dropbtn" onclick="highlighter()">Highlighter</button>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="contact()">Contact</button>
+      </div>
+      <div class="dropdown">
+      <button class="dropbtn" onclick="college()">College</button>
+      </div>
+      
+  </div>
+</nav>
+
+-->
+<br>
+
+div id="description" class="container-fluid bg-grey">
+  <div class="text-center">
+   <h4>SLCs <strong>(Small Learning Communities)</strong></h4>
+     <h4>Each student enters one of our SLCs which is run by one teacher-leader (Director), one school counselor, and a dozen teachers who use rigorous instruction and data-tracking analysis to ensure credit accumulation and graduation success. Each SLC is linked to career themes and has connections to the professional world with various partnerships and internships to elite organizations from around New York City.  Hillcrest offers its students several award-winning programs such as <a href="academics.html#ve">Virtual Enterprise</a>, Model UN, Moot Court, Junior Achievement, HOSA, Journalism, and Theatre.</h4>
+ </div>
+</div><br>
+    <!-- Biz-Tek Start-->
+    <center>
+<img class="collapsible" src="https://i.imgur.com/M1YSat1.jpg" height="500" width="5">
+<div id="biztek" class="jumbotron text-center" style="background-image: url(https://cdn.glitch.com/73442f06-3b79-4cfe-9dc7-3cdb78168734%2Fbiztek.png?1554812636040);">
+  <h1 style="color: rgb(178,50,178)">Biztek</h1>
+  <p style="color: rgb(178,50,178)"></p>
+
+<div id="description" class="container-fluid bg-grey">
+  <div class="row">
+    
+    <div class="col-sm-8">
+        
+      <h2>Our Values</h2><br>
+            <h4><strong>MISSION:</strong> Our Biz-Tek program introduces students to transverse a diverse list of computer related courses, such as CAD/CAM where students can learn how to make functional virtual designs, and print models of their designs. Other students will learn different programming languages, which they can also take into future careers when they leave high school.</h4><br>
+        
+        
+      <h5>
+        Below are a few of the programs in the Biz-Tek program, click a link to learn more:
+      </h5>
+          <p>
+            <button class="btn" style="color: black; font-size: 20px;"><a href="software.html">Software Engineering</a></button> 
+            <button class="btn" style="color: black; font-size: 20px;">       <a href="https://mustafabin.github.io/School-Website/">CAD/CAM</a></button> 
+            <button class="btn" style="color: black; font-size: 20px;"><a href="introduction.html">Robotics</a></button>
+      </p>
+    
+    </div>
+  </div>
+    <div id="description" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+    <h2>Director: </h2>
+    </div>
+    <div class="col-sm-4">
+      <h2>Ms.Romero</h2>
+    </div>
+  </div>
+<div class="row">
+ <div class="col-sm-4">
+    <h2>Tel:(718)658-5407 Ext.:3871</h2>
+    </div>
+    <div class="col-sm-4">
+      <h2><a href="mailto:nskobelsky@hillcresths.org?Subject=Question%20From%20Parent" target="_top">nskobelsky@hillcresths.org</a></h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+    <h2>Guidance Counselor:</h2>
+    </div>
+    <div class="col-sm-4">
+      <h2>Mr.Rico</h2>
+    </div>
+</div>
+<div class="row">
+ <div class="col-sm-4">
+    <h2>Ext. 4871</h2>
+  </div>
+<div class="col-sm-4">
+    <h2><a href="mailto:certek@hillcresths.org?Subject=Question%20From%20Parent" target="_top">certel@hillcresths.org</a></h2>
+</div>
+  </div>
+</div><br>
+    </div> 
+    
+</div>
+    </center>
+</div> 
+    <!--Pre-Med End-->
+    
+    <div class="jumbotron text-center" style="background-color: #b232b2;">
+  <h1></h1>
+</div>
+<div id="highlights" class="container-fluid">  
+  <div class="row slideanim">
+
+    </div>     </center>
+
+    <!-- PreMed -->
+    
+    <img class="collapsible" src="https://i.imgur.com/M1YSat1.jpg" height="500" width="5">
+<div class="content">
+    <div id="public-service" class="jumbotron text-center" style="background-image: url(https://cdn.glitch.com/73442f06-3b79-4cfe-9dc7-3cdb78168734%2F3.JPG?1554812194772);">
+  <h1 style="color: rgb(178,50,178)">Pre-Med</h1>
+  <p style="color: rgb(178,50,178)"></p>
+
+<div id="description" class="container-fluid bg-grey">
+  <div class="row">
+    </div>
+  
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+        <center>
+      <h4><strong>MISSION:</strong> We provide students with tools to explore scientific problems through critical thinking and hands-on activities to familiarize students with the tools that they will use in the future. Students will also coordinate with other institutions across the city, such as Cornell and their generously gifted Hydro/Aquaponics research lab, along with being able to learn from top class professors.</h4><br>
+</center>
+    </div>
+  </div>
+</div>
+<!-- PRE-MED Description -->
+  
+
+<div id="description" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+    <h2>Director: </h2>
+    </div>
+    <div class="col-sm-4">
+      <h2>Ms.Skobelsky</h2>
+    </div>
+  </div>
+<div class="row">
+ <div class="col-sm-4">
+    <h2>Tel:(718)658-5407 Ext.:3871</h2>
+    </div>
+    <div class="col-sm-4">
+      <h2><a href="mailto:nskobelsky@hillcresths.org?Subject=Question%20From%20Parent" target="_top">nskobelsky@hillcresths.org</a></h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+    <h2>Guidance Counselor:</h2>
+    </div>
+    <div class="col-sm-4">
+      <h2>Mr.Ertel</h2>
+    </div>
+</div>
+<div class="row">
+ <div class="col-sm-4">
+    <h2>Ext. 4871</h2>
+  </div>
+<div class="col-sm-4">
+    <h2><a href="mailto:certek@hillcresths.org?Subject=Question%20From%20Parent" target="_top">certel@hillcresths.org</a></h2>
+</div>
+  </div>
+    </div><br> </div></nav>
+<!-- Pre-Med End -->
+    
+    
+<!-- Highlights Section -->
+<div class="jumbotron text-center" style="background-color: #b232b2;">
+  <h1></h1>
+</div>
+<div id="highlights" class="container-fluid">  
+  <div class="row slideanim">
+
+    </div>     
+    </div> </div> 
+    
+    
+    
+    <!--Public Service & Law Start-->
+<img class="collapsible" src="https://i.imgur.com/M1YSat1.jpg" height="500" width="5">
+<div class="content">
+  <div class="jumbotron text-center" style="background-color: #b232b2;">
+  <h1></h1>
+</div>
+<div id="highlights" class="container-fluid">  
+  <div class="row slideanim">
+<div id="pre-med" class="jumbotron text-center" style="background-image: url(https://cdn.glitch.com/73442f06-3b79-4cfe-9dc7-3cdb78168734%2Fstudentspraying.PNG?1557145849021);">
+  <h1 style="color: rgb(178,50,178)">Public Service & Law</h1>
+  <p style="color: rgb(178,50,178)"></p>
+</div>
+<div id="description" class="container-fluid bg-grey">
+  <div class="row">
+    
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+            <h4><strong>MISSION:</strong>We seek to underline the importance and value of civic responsibility and service work, by offering courses which prepare students for successful public/community careers in federal, state, and local government or in community service agencies. Students are inspired to learn how to become active participants in their communities and encouraged to celebrate their individual /cultural differences by participating in debates, conferences, class trips, community group projects, town hall-style meetings, student government, and Mock trials and Moot Court.</h4><br>
+
+     <div id="description" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+    <h2>Director:</h2>
+    </div>
+    <div class="col-sm-4">
+      <h2>Ms.Khan</h2>
+    </div>
+</div>
+<div class="row">
+ <div class="col-sm-4">
+    <h2>Ext. 4301</h2>
+    </div>
+    <div class="col-sm-4">
+      <h2><a href="mailto:example@example.domain?Subject=Question%20From%20Parent" target="_top">example@example.domain</a></h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+    <h2>Guidance Counselor:</h2>
+    </div>
+    <div class="col-sm-4">
+      <h2></h2>
+    </div>
+</div>
+<div class="row">
+ <div class="col-sm-4">
+    <h2>123-456-7890</h2>
+    </div>
+    <div class="col-sm-4">
+      <h2><a href="mailto:example@example.domain?Subject=Question%20From%20Parent" target="_top">example@example.domain</a></h2>
+    </div>
+  </div>
+</div><br>
+   
+    </div>  
+</div> 
+      </div> </div> </div> </div>
+<!--Public Service & Law End-->
+  
+     <div class="jumbotron text-center" style="background-color: #b232b2;">
+  <h1></h1>
+</div>
+<div id="highlights" class="container-fluid">  
+  <div class="row slideanim">
+
+    </div>   
+    
+    <!--Theatre Start -->
+<img class="collapsible" src="https://i.imgur.com/M1YSat1.jpg" height="500" width="5">
+<div class="content">
+ 
+    <div id="theatre" class="jumbotron text-center" style="background-image: url(img/1.jpg);">
+  <h1 style="color: rgb(178,50,178)">Theatre</h1>
+  <p style="color: rgb(178,50,178)"></p>  
+</div>
+<div id="description" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4 slideanim">
+      <span class="glyphicon glyphicon-leaf logo-small"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong>No information given</h4><br>
+      <div id="description" class="container-fluid bg-grey">
+  <div class="row">
+   <div class="col-sm-4">
+    <h2>Director:</h2>
+    </div>
+    <div class="col-sm-4">
+      <h2>aEFQEF</h2>
+    </div>
+</div>
+
+<div class="row">
+ <div class="col-sm-4">
+    <h2>123-456-7890</h2>
+    </div>
+  <div class="col-sm-4">
+      <h2><a href="mailto:example@example.domain?Subject=Question%20From%20Parent" target="_top">example@example.domain</a></h2>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-4">
+    <h2>Guidance Counselor:</h2>
+    </div>
+    <div class="col-sm-4">
+      <h2>aEFQEF</h2>
+    </div>
+</div>
+
+<div class="row">
+ <div class="col-sm-4">
+    <h2>123-456-7890</h2>
+    </div>
+ <div class="col-sm-4">
+      <h2><a href="mailto:example@example.domain?Subject=Question%20From%20Parent" target="_top">example@example.domain</a></h2>
+    </div>
+  </div>
+</div><br>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+<!--Theatre End-->
+    
+    <div class="jumbotron text-center" style="background-color: #b232b2;">
+  <h1></h1>
+</div>
+<div id="highlights" class="container-fluid">  
+  <div class="row slideanim">
+
+    </div>     
+
+    
+   <!--Teachers of Tomorrow Start--> 
+<img class="collapsible" src="https://i.imgur.com/M1YSat1.jpg" height="500" width="5">
+<div class="content">
+  
+    <div id="teachers" class="jumbotron text-center" style="background-image: url(https://cdn.glitch.com/73442f06-3b79-4cfe-9dc7-3cdb78168734%2F%3Boujaebnh'olaehbf'oehb'obolbg.PNG?1557146885099);">
+  <h1 style="color: rgb(178,50,178)">Teachers Of Tommorow</h1>
+  <p style="color: rgb(178,50,178)"></p>
+</div>
+<div id="description" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4 slideanim">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+    </div>    
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong>No information given</h4><br>
+      <div id="description" class="container-fluid bg-grey">
+  <div class="row">
+    
+    <div class="col-sm-4">
+    <h2>Director:</h2>
+    </div>
+    <div class="col-sm-4">
+      <h2>aEFQEF</h2>
+    </div>
+</div>
+
+<div class="row">
+ <div class="col-sm-4">
+    <h2>123-456-7890</h2>
+    </div>
+    
+   
+    <div class="col-sm-4">
+      <h2><a href="mailto:example@example.domain?Subject=Question%20From%20Parent" target="_top">example@example.domain</a></h2>
+    </div>
+</div>
+
+  <div class="row">
+    
+    <div class="col-sm-4">
+    <h2>Guidance Counselor:</h2>
+    </div>
+    <div class="col-sm-4">
+      <h2>N/A</h2>
+    </div>
+</div>
+
+<div class="row">
+ <div class="col-sm-4">
+    <h2>N/A</h2>
+    </div>
+    
+   
+    <div class="col-sm-4">
+      <h2><a href="mailto:example@example.domain?Subject=Question%20From%20Parent" target="_top">example@example.domain</a></h2>
+    </div>
+</div>
+
+</div><br>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+<!--Teachers of Tomorrow End-->
+    
+    <div class="jumbotron text-center" style="background-color: #b232b2;">
+  <h1></h1>
+</div>
+<div id="highlights" class="container-fluid">  
+  <div class="row slideanim">
+
+    </div>     
+
+    
+    <!--Media Arts & Music Start-->
+<img class="collapsible" src="https://i.imgur.com/M1YSat1.jpg" height="500" width="5">
+<div class="content">
+  
+ <div class="jumbotron text-center" style="background-color: #b232b2;">
+  <h1></h1>
+</div>
+<div id="highlights" class="container-fluid">  
+  <div class="row slideanim">
+<div id="media-arts" class="jumbotron text-center" style="background-image: url(img/1.jpg);">
+  <h1 style="color: rgb(178,50,178)">Media Arts & Music</h1>
+  <p style="color: rgb(178,50,178)"></p>
+</div>
+<div id="description" class="container-fluid bg-grey">
+  <div class="row">
+    
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+           <h4><strong>MISSION:</strong>The Academy of Media, Arts, and Music is an Honors program that introduces students to higher educations through the humanities, a curriculum based on several well-rounded subjects. Some of these programs are the award-winning Media track, which includes Model United Nations, Journalism, Film Studies, or Creative Writing.  This program creates students of the highest quality, and allows them to excel, even when they pursue higher education. </h4><br>
+<div id="description" class="container-fluid bg-grey">
+  <div class="row">
+    
+    <div class="col-sm-4">
+    <h2>Director: </h2>
+    </div>
+    <div class="col-sm-4">
+      <h2>Stella Maris Boghosian</h2>
+    </div>
+</div>
+
+<div class="row">
+ <div class="col-sm-4">
+    <h2>Phone Ext. 3802  </h2>
+    </div>
+    
+   
+    <div class="col-sm-4">
+      <h2><a href="mailto:example@example.domain?Subject=Question%20From%20Parent" target="_top">example@example.domain</a></h2>
+    </div>
+</div>
+
+  <div class="row">
+    
+    <div class="col-sm-4">
+    <h2>Guidance Counselor:</h2>
+    </div>
+    <div class="col-sm-4">
+      <h2>N/A</h2>
+    </div>
+</div>
+
+<div class="row">
+ <div class="col-sm-4">
+    <h2>Phone Ext. 3780</h2>
+    </div>
+    
+   
+    <div class="col-sm-4">
+      <h2><a href="mailto:example@example.domain?Subject=Question%20From%20Parent" target="_top">example@example.domain</a></h2>
+    </div>
+</div>
+
+</div><br>
+      
+    </div>
+  </div>
+</div>
+
+
+    </div>     
+</div>
+    </div>
+<!--Media Arts & Music End -->
+    
+    <div class="jumbotron text-center" style="background-color: #b232b2;">
+  <h1></h1>
+</div>
+<div id="highlights" class="container-fluid">  
+  <div class="row slideanim">
+
+    </div>   
+
+    
+    <!--Global Citizens Start-->
+<img class="collapsible" src="https://i.imgur.com/M1YSat1.jpg" height="500" width="5">
+<div class="content">
+  
+<div id="global-citizens" class="jumbotron text-center" style="background-image: url(img/2.jpg);">
+  <h1 style="color: rgb(178,50,178)">Global Citizens</h1>
+  <p style="color: rgb(178,50,178)"></p>
+</div>
+<div id="description" class="container-fluid bg-grey">
+  <div class="row">
+    
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong>Our mission is to create a sense of belonging in which students feel welcomed, accepted and respected. We instill a value for learning, promote civic values and promote the ideals of community service. As a community we aid our students to transition and acculturate to a new environment.</h4><br>
+      <div id="description" class="container-fluid bg-grey">
+  <div class="row">
+    
+    <div class="col-sm-4">
+    <h2>Director:</h2>
+    </div>
+    <div class="col-sm-4">
+      <h2>Sally Mussafi</h2>
+    </div>
+</div>
+
+<div class="row">
+ <div class="col-sm-4">
+    <h2>Ex: 4803</h2>
+    </div>
+    
+   
+    <div class="col-sm-4">
+      <h2><a href="mailto:example@example.domain?Subject=Question%20From%20Parent" target="_top">smussafi@schools.nyc.gov</a></h2>
+    </div>
+</div>
+
+  <div class="row">
+    
+    <div class="col-sm-4">
+    <h2>Guidance Counselor:</h2>
+    </div>
+    <div class="col-sm-4">
+      <h2>Judy Cancel Valerio and Humaira Abbasi</h2>
+    </div>
+</div>
+
+<div class="row">
+ <div class="col-sm-4">
+    <h2>Ext. 4650</h2>
+    </div>
+    
+   
+    <div class="col-sm-4">
+      <h2><a href="mailto:example@example.domain?Subject=Question%20From%20Parent" target="_top">jcancelvalerio@schools.nyc.gov and habbasi@schools.nyc.gov</a></h2>
+    </div>
+</div>
+
+</div><br>
+    </div>
+  </div>
+</div>
+
+
+</div>
+<!--Global Citizens End-->
+    
+    <div class="jumbotron text-center" style="background-color: #b232b2;">
+  <h1></h1>
+</div>
+<div id="highlights" class="container-fluid">  
+  <div class="row slideanim">
+
+    </div>     
+    </div>
+    
+    
+<!--Health Sciences Start-->
+    <img class="collapsible" src="https://i.imgur.com/M1YSat1.jpg" height="500" width="5">
+<div class="content">
+ 
+    <div id="global-citizens" class="jumbotron text-center" style="background-image: url(img/2.jpg);">
+  <h1 style="color: rgb(178,50,178)">Health Sciences</h1>
+  <p style="color: rgb(178,50,178)"></p>
+</div>
+<div id="description" class="container-fluid bg-grey">
+  <div class="row">
+    
+    <div class="col-sm-8">
+      <h2>Our Values</h2><br>
+      <h4><strong>MISSION:</strong>The mission of our SLC involves providing students with the opportunity to study and gain the skills needed in the growing field of Health Science careers; as well as provide the academic study needed in their acquisition of Regents and Advanced Regents diplomas.</h4><br>
+      <div id="description" class="container-fluid bg-grey">
+  <div class="row">
+    
+    <div class="col-sm-4">
+    <h2>Director:</h2>
+    </div>
+    <div class="col-sm-4">
+      <h2>Gloria Zotti-Meltzer</h2>
+    </div>
+</div>
+
+<div class="row">
+ <div class="col-sm-4">
+    <h2>Ex: 3620</h2>
+    </div>
+    
+   
+    <div class="col-sm-4">
+      <h2><a href="mailto:example@example.domain?Subject=Question%20From%20Parent" target="_top">gzottim@hillcresths.org</a></h2>
+    </div>
+</div>
+
+  <div class="row">
+    
+    <div class="col-sm-4">
+    <h2>Guidance Counselor:</h2>
+    </div>
+    <div class="col-sm-4">
+      <h2>Cassandra Johnson</h2>
+    </div>
+</div>
+
+<div class="row">
+ <div class="col-sm-4">
+    <h2>Ex: 3580 </h2>
+    </div>
+    
+   
+    <div class="col-sm-4">
+      <h2><a href="mailto:example@example.domain?Subject=Question%20From%20Parent" target="_top">cjohnso3@hillcresths.org</a></h2>
+    </div>
+</div>
+
+</div><br>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+<!--Health Sciences End-->
+
+
+
+<!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> <!-- --> 
+<script>
+//this script tag must be below the head tage b/c it needs the page to load before it can get elements by class name 
+var coll = document.getElementsByClassName("collapsible");
+//gathers all the divs with the class name collapsible into an array (page must load before that happens ^^)
+var i;
+// the for loop below goes thru every div in the above mentioned array
+for (i = 0; i < coll.length; i++) {
+ coll[i].addEventListener("click", function() {
+ 	//The classList property returns the class name(s) of an element, as a DOMTokenList object.
+ 	// to futher investigate this un-comment the line below
+ 	console.log(this.classList);
+ 	//https://www.w3schools.com/jsref/prop_element_classlist.asp
+   this.classList.toggle("active");
+   var content = this.nextElementSibling;
+   //nextElementSibling is the div paragraph 
+   console.log(content);
+   if (content.style.display === "block") {
+     content.style.display = "none";
+   } else {
+     content.style.display = "block";
+   }
+ });
+}
+</script>
+</body>
+</html>
