@@ -6,20 +6,18 @@
 <style>
 .collapsible {
   background-color: #AE33FF;
+  
   color: white;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+
   cursor: pointer;
   padding: 18px;
-  width: 100%;
-  
   border: none;
   text-align: center;
   outline: none;
   font-size: 15px;
 }
 
-.active, .collapsible:hover {
+.active, .slcImages:hover {
     filter: grayscale(0%);
 }
 
@@ -28,6 +26,28 @@
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+}
+.slcImages{
+  -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  width: 100%
+}
+.slcText{
+  position: absolute;
+  left: 0;
+  top: 70%;
+  width: 100%;
+  text-align: center;
+  font-size: 36px;
+  color: #AE33FF;
+  font-weight: bold;
+
+}
+.container{
+  position: relative;
+}
+.wholePage{
+  max-width: 
 }
 </style>
 
@@ -38,23 +58,29 @@
 <title>SLC</title>
 </head>
 <body>
-<!--
-Banner goes here |
-                |
-                v 
--->
-<br>
+<div class="wholePage">
 
 
+  <!--
+  Banner goes here |
+                  |
+                  v 
+  -->
+  <br>
 
-<img class="collapsible" src="https://i.imgur.com/M1YSat1.jpg">
-<div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <div class="container">
+    <div class="collapsible">
+      <img class="slcImages" src="https://i.imgur.com/M1YSat1.jpg">
+      <p class="slcText">Pre-med</p>
+    </div>
+    <div class="content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+  </div>
+
 
 </div>
-
-
-
 
 
 <script>
@@ -65,10 +91,10 @@ var i;
 // the for loop below goes thru every div in the above mentioned array
 for (i = 0; i < coll.length; i++) {
  coll[i].addEventListener("click", function() {
- 	//The classList property returns the class name(s) of an element, as a DOMTokenList object.
- 	// to futher investigate this un-comment the line below
- 	console.log(this.classList);
- 	//https://www.w3schools.com/jsref/prop_element_classlist.asp
+  //The classList property returns the class name(s) of an element, as a DOMTokenList object.
+  // to futher investigate this un-comment the line below
+  console.log(this.classList);
+  //https://www.w3schools.com/jsref/prop_element_classlist.asp
    this.classList.toggle("active");
    var content = this.nextElementSibling;
    //nextElementSibling is the div paragraph 
@@ -84,4 +110,3 @@ for (i = 0; i < coll.length; i++) {
 </script>
 </body>
 </html>
-
